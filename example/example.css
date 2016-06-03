@@ -1,0 +1,37 @@
+.image-uploader {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #CCC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-new, .image-exists {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-new button {
+  width: 200px;
+  height: 50px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-remove {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #FFF;
+  background-color: #CCC;
+  line-height: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+}
