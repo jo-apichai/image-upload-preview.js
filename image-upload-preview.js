@@ -77,12 +77,16 @@
       // Set file input when user drop image on uploader
       this.$self.on('dragover', function() {
         self.$input.css('display', 'block');
+      });
+
+      this.$input.on('drop', function() {
+        self.$input.css('display', 'none');
       })
       .on('dragleave', function() {
         self.$input.css('display', 'none');
       })
-      .on('drop', function() {
-        self.$input.css('display', 'none');
+      .on('dragover', function(e) {
+        e.stopPropagation();
       });
     },
 
